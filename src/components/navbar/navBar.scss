@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+$mainColor:#0076B8;
+$primaryColor:#fff;
+$btnColor:#242424;
+
+ 
+nav{
+  background-color: #000;
+ 
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem;
+  z-index: 10;
+  align-items: center;
+  position: relative;
+}
+ 
+.button {
+  padding: 6px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.btnPrimary {
+  background-color: $primaryColor;
+  color: $btnColor;
+  border: 1px soid $primaryColor;
+}
+
+
+
+.btnOutlined {
+  background-color: transparent;
+  color: white;
+  border: 1px solid $primaryColor;
+  transition: all 0.5s ease-in-out;
+}
+
+.btnPrimary,
+.btnOutlined {
+  &:hover {
+    background-color: $primaryColor;
+    color: $btnColor;
+    transition: all 0.5 ease-in-out;
+  }
+}
+
+.medium {
+  padding: 6px 20px;
+  font-size: 20px;
+}
+
+.large {
+  padding: 12px 2px;
+  font-size: 20px;
+}
+
+.small {
+  padding: 6px 18px;
+  font-size: 18px;
+}
+
+
+.navlink {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 18px;
+  letter-spacing: 1px;
+  height: 100%;
+  cursor: pointer;
+  &.active{
+    color: #15cdfc;
+  }
+  &:hover{
+    color: #15cdfc;
+  }
+}
+
+.bars{
+  display: none;
+  color: #fff;
+  @media screen and(max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 1.8rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  i{
+    color: #fff !important;
+  }
+}
+
+.navMenu{
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+  @media screen and(max-width: 768px){
+    display: none;
+  }
+
+}
+
+.navBtn{
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  @media screen and(max-width: 768px){
+    display: none;
+  }
+}
