@@ -1,11 +1,11 @@
 import "../node_modules/bootstrap/dist/js/bootstrap.min";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/Home";
-import Services from "./components/Services";
-import About from "./components/About";
-import Error from "./components/Error";
+import Home from "./components/pages/Home";
+import Services from "./components/pages/Services";
+import About from "./components/pages/About";
+import Error from "./components/pages/Error";
 import Nav from "./components/navbar/Nav";
-import Product from "./components/Product";
+import Product from "./components/pages/Product";
 import {Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {

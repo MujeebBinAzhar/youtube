@@ -1,6 +1,6 @@
 import React,{useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Button } from "../Button";
+import { Button } from "../elements/Button";
 import './navBar.scss'
 
  
