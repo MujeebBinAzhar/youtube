@@ -5,6 +5,7 @@ import Services from "./components/pages/Services";
 import About from "./components/pages/About";
 import Error from "./components/pages/Error";
 import Nav from "./components/navbar/Nav";
+import Sidebar from "./components/sidebar/Sidebar";
 import Product from "./components/pages/Product";
 import {Route, BrowserRouter as Router, Routes } from "react-router-dom";
 

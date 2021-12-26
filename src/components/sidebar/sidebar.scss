@@ -1,0 +1,65 @@
+.sideBarContainer {
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background: #0d0d0d;
+  left: -100%;
+  top: 58px;
+  transition: all 0.3s ease-in-out;
+
+  .closeIcon {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+    i {
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .sideMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+
+    .sideNavlink {
+      display: block;
+      margin-top: 1rem;
+      width: 100%;
+      border: 1px solid #fff;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      padding: 8px 0;
+     
+    }
+
+    .sideMenuLogo {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@keyframes sidebarAnimation {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.transition {
+  animation-name: sidebarAnimation;
+  animation-duration: 0.5s;
+  left: 0;
+}
