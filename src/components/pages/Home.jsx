@@ -1,13 +1,24 @@
-import React from 'react'
-
+import React from "react";
+import { Button } from "../../components/elements/Button";
 const Home = () => {
   return (
-    <div className='mt-3'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic porro error vel ducimus veritatis? Eos, aperiam. Odit exercitationem rem nostrum ratione qui voluptates optio recusandae praesentium totam dolores? Numquam, in.
-     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolorem quas esse neque dolor placeat dignissimos amet quasi. Et sequi incidunt officiis laboriosam amet. Mollitia assumenda saepe non veritatis odit.
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, veritatis? Suscipit sed repudiandae deleniti consequuntur aperiam reiciendis, doloribus quisquam tempore accusamus! Eaque corrupti ab id necessitatibus, at voluptate sunt sit!
-    </div>
-  )
-}
+    <div className="container-fluid p-0 m-0">
+      <section className="heroSection">
+        <video autoPlay loop muted>
+          <source src={require("./World.mp4")} type="video/mp4" />
+        </video>
 
-export default Home
+        <div className="overlay">
+          <p className="mainHeading">welcome to Github Repository</p>
+          <p className="subHeading">what are you waiting for?</p>
+          <div className="buttonContainer">
+            <Button btnStyle="btnOutlined">Get Started</Button>
+            <Button btnStyle="btnPrimary">Watch Trailer</Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;

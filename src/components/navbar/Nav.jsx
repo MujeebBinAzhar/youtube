@@ -41,7 +41,10 @@ const Nav = () => {
         </div>
 
         <div className="navBtn">
-          {button && <Button btnStyle="btnOutlined">SIGN UP</Button>}
+          <NavLink to='/signup' className='btnMobile'>
+          {button && <Button btnStyle="btnOutlined" visit='/signup' >SIGN UP</Button>}
+          </NavLink>
+       
         </div>
       </nav>
 
