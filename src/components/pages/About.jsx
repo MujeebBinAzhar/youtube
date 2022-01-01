@@ -1,6 +1,12 @@
-import React from 'react'
+import React from "react";
+import { useLocation } from "react-router-dom";
 
-const About = () => {
+const About = (props) => {
+
+  const location = useLocation()
+ 
+   
+  console.log( location.state);
   return (
     <div className='mt-5'>
      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic porro error vel ducimus veritatis? Eos, aperiam. Odit exercitationem rem nostrum ratione qui voluptates optio recusandae praesentium totam dolores? Numquam, in.

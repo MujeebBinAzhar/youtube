@@ -140,6 +140,7 @@ nav {
   }
 }
 
+
 .heroSection {
   height: 90vh;
   width: 100%;
@@ -205,7 +206,62 @@ nav {
   }
 }
 
+.text-justify{
+  text-align: justify;
+}
+
+.cardTitle{
+  font-weight: bold;
+}
+.productHero{
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./assets/image/dogs.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .overlay{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+  }
+}
 .image {
   height: 100vh;
   width: auto;
+}
+.cardSection{
+  h1{
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.cardHeading{
+  position: relative;
+  .label{
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    padding: 4px 20px;
+    background-color: $mainColor;
+    border-radius: 2px;
+    p{
+      margin: 0 !important;
+      color: $primaryColor;
+      text-transform: capitalize;
+      font-size: 1.1vw;
+    }
+  }
+  .Image{
+    height: 250px;
+    width: 100%;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.minHeight{
+  min-height: 450px !important;
+  border: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
