@@ -1,7 +1,8 @@
-import React, {useLocation} from "react";
+import React, { useLocation } from "react"; 
 import { Button } from "../../components/elements/Button";
 import Card from "../elements/Card";
-import {cardData} from "../../components/elements/CardData"
+import { cardData } from "../../components/elements/CardData";
+import Footer from "../../components/elements/Footer";
 const Home = () => {
   return (
     <>
@@ -19,7 +20,6 @@ const Home = () => {
               <Button btnStyle="btnPrimary">Watch Trailer</Button>
             </div>
           </div>
-           
         </section>
 
         <section className="cardSection">
@@ -28,22 +28,31 @@ const Home = () => {
           </h1>
           <div className="container">
             <div className="row mt-3 pb-5">
-              {cardData.map((currentEle) => {
-                
-                return (
-                
-                  <Card  key={currentEle.id}  label={currentEle.label} para={currentEle.para} image={require(`../../assets/image/${currentEle.image}.jpg`)} heading={currentEle.heading} />
-                  
-                );
-                
-              })}
+              <div className="col-10 mx-auto">
+                <div className="row">
+                  {cardData.map((currentEle) => {
+                    return (
+                      <Card
+                        class={currentEle.class}
+                        key={currentEle.id}
+                        label={currentEle.label}
+                        para={currentEle.para}
+                        image={require(`../../assets/image/${currentEle.image}.jpg`)}
+                        heading={currentEle.heading}
+                      />
+                    );
+                  })}
+                </div>
+              </div>
 
               <div className="col-md-4"></div>
               <div className="col-md-4"></div>
             </div>
           </div>
         </section>
+
       </div>
+      <Footer/>
     </>
   );
 };

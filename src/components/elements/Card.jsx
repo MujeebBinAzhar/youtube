@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 const Card = (props) => {
   return (
     <>
-    <div  className="col-md-4 pb-2">
+    <div  className={`${props.class} pb-3`}>
       <div className="card minHeight">
         <Link to={{ 
           pathname:'/about',

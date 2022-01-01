@@ -21,8 +21,7 @@ const closeSideBar = ()=>{
 
           <NavLink
             className="sideNavlink"
-            to="/services"
-        
+            to="/services"        
             onClick={props.closeEvent}
           >
             Services
@@ -34,6 +33,14 @@ const closeSideBar = ()=>{
             onClick={props.closeEvent}
           >
             Products
+          </NavLink>
+
+          <NavLink
+            className="sideNavlink"
+            to="/error"
+            onClick={props.closeEvent}
+          >
+            Events
           </NavLink>
         </div>
       </div>

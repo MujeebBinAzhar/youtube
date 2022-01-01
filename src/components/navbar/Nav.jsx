@@ -38,6 +38,9 @@ const Nav = () => {
           <NavLink className="navlink" to="/products" activeclassname="active">
             Products
           </NavLink>
+          <NavLink className="navlink" to="/error" activeclassname="active">
+            Events
+          </NavLink>
         </div>
 
         <div className="navBtn">
